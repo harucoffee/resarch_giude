@@ -6,9 +6,9 @@ import '@/app/global.css'
 const Header: FC = () => {
 
     return (
-      <div className="flex">
-        <div><h1 className="text-4xl">Aomori Guide</h1></div>
-        <div><TemporaryDrawer></TemporaryDrawer></div>
+      <div className="flex justify-center mx-auto p-2 m-2">
+        <div><h1 className="text-4xl items-center">Aomori Guide</h1></div>
+        <div className="absolute right-0"><TemporaryDrawer></TemporaryDrawer></div>
       </div>
     );
 };
