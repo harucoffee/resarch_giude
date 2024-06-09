@@ -3,16 +3,26 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import Link from '@mui/material/Link';
+
 
 import MenuIcon from '@mui/icons-material/Menu';
 
+type Links = {
+    name: string;
+    url: string;
+};
+
+const Links: Links[] = [
+    { name: 'Home', url: '/' },
+    { name: 'About Us', url: '/about' },
+    { name: 'Reserve', url: '/reserve' },
+    { name: 'Contact', url: '/contact'}
+  ];
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -24,10 +34,12 @@ export default function TemporaryDrawer() {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {['Home','About Us','Reserve', 'Contact'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {Links.map(({name, url}) => (
+          <ListItem key={name} disablePadding>
             <ListItemButton>
-              <ListItemText primary={text} />
+                <Link href={url} underline='none' color="inherit" >
+                    <ListItemText primary={name} />
+                </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -38,7 +50,7 @@ export default function TemporaryDrawer() {
   return (
     <>
       <Button onClick={toggleDrawer(true)}><MenuIcon></MenuIcon></Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer anchor='right' open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
     </>

@@ -15,6 +15,10 @@ export default function Home() {
         <br/>We look forward to your participation!
         </p>
       </div>
+      <div className="item-center">
+        <Button variant="contained" href="/reserve">Book Here!</Button>
+      </div>
+
     </>
     
   );
