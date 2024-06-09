@@ -1,5 +1,5 @@
 export default function Page() {
     return (
-        <h1>reserve page!!</h1>
+        <h1 className="text-center">reserve page!!</h1>
     )
 }

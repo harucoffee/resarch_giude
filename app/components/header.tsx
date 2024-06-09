@@ -10,7 +10,7 @@ const Header: FC = () => {
     };
 
     return (
-      <header className='header' >
+      <header className='flex'>
         <ToggleButton
             open={open}
             controls='navigation'

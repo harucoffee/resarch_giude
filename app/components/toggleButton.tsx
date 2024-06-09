@@ -17,8 +17,6 @@ export const ToggleButton: FC<Props> = ({ open, onclick, controls, label }) => {
             onClick={onclick}
             className='toggleButton'
         >
-            <span className='line-1'></span>
-            <span className='line-2'></span>
         </button>
     );
 };
