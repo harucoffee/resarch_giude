@@ -15,8 +15,8 @@ export default function Home() {
         <br/>We look forward to your participation!
         </p>
       </div>
-      <div className="item-center">
-        <Button variant="contained" href="/reserve">Book Here!</Button>
+      <div className="m-8 p-1 text-center">
+        <Button variant="contained" href="/reserve" className="bg-orange-500">Book Here!</Button>
       </div>
 
     </>
