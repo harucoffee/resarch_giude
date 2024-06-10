@@ -1,24 +1,15 @@
 import { FC, useState } from 'react';
-import { ToggleButton } from './toggleButton';
-import { Navigation } from './navigation';
-import { IoMdMenu } from 'react-icons/io';
+import * as React from 'react';
+import TemporaryDrawer from './drawer';
+import '@/app/global.css'
 
 const Header: FC = () => {
-    const [open, setOpen] = useState(false);
-    const toggleFunction = () => {
-        setOpen((prevState) => !prevState);
-    };
 
     return (
-      <header className='flex'>
-        <ToggleButton
-            open={open}
-            controls='navigation'
-            label="メニューを開きます"
-            onclick={toggleFunction}
-        />
-        <Navigation id='navigation' open={open} />
-      </header>
+      <div className="flex justify-center mx-auto p-2 m-2">
+        <div><h1 className="text-4xl items-center">Aomori Guide</h1></div>
+        <div className="absolute right-0"><TemporaryDrawer></TemporaryDrawer></div>
+      </div>
     );
 };
 

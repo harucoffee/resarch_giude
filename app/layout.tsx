@@ -1,7 +1,8 @@
 'use client';
 
-import { IoMdMenu } from "react-icons/io";
+import '@/app/global.css'
 import Header from "@/app/components/header";
+import Footer from './components/footer';
 
 export default function RootLayout({
   children,
@@ -10,15 +11,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <head>
-            <title>Aomori Local Guide</title>
-            <meta charSet="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </head>
         <body>
-        <Header />
-        {children}
-        
+          <Header />
+          {children}
+          <Footer />
         </body>
     </html>
   );
