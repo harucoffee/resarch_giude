@@ -7,7 +7,7 @@ const Header: FC = () => {
 
     return (
       <div className="flex justify-center mx-auto p-2 m-2">
-        <div><h1 className="text-4xl items-center">Traveling Aomori</h1></div>
+        <div><h1 className="text-3xl items-center">Traveling Aomori</h1></div>
         <div className="absolute right-0"><TemporaryDrawer></TemporaryDrawer></div>
       </div>
     );
