@@ -37,7 +37,7 @@ function ContactForm() {
                         required
                     />
                 </div>
-                <Button type="submit">Submit</Button>
+                <Button variant="contained" type="submit" >Submit</Button>
             </form>
         </div>
     )
