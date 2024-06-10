@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
         },
     })
 
-    const mailOptions: Mail.mailOptions = {
+    const mailOptions: Mail.Options = {
         from: env.NODEMAILER_EMAIL,
         to: env.NODEMAIRER_EMAIL,
         subject: `Message from ${email}`,
