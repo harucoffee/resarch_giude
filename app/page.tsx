@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center object-cover">
-          <div className="w-screen h-52 overflow-hidden relative">
+          <div className="w-screen h-56 overflow-hidden relative">
           <Image src="/catch/nebta.jpg" alt="welcome aomori!!" fill objectFit="cover" objectPosition="center" />
           </div>
       </div>
-      <div className="text-left p-7 mt-5 leading-relaxed text-lg">
+      <div className="text-left p-7 mt-3 leading-relaxed text-lg">
         <p>
         Hello!<br/>
         We are excited to offer an amazing tour assistant service. To fully experience the local charm and create unforgettable memories, please join our tours!
