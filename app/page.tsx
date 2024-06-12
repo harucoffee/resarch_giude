@@ -15,7 +15,7 @@ export default function Home() {
         <p>
         Hello!<br/>
         We are excited to offer an amazing tour assistant service. To fully experience the local charm and create unforgettable memories, please join our tours!
-        <br/>We showcase everything from historical landmarks to hidden scenic spots and delicious local cuisine, revealing the best-kept secrets of the area. Our assistant, who love Aomori, will lead you on an enjoyable journey, ensuring a fantastic time.
+        <br/>We showcase everything from historical landmarks to hidden scenic spots and delicious local cuisine, revealing the best-kept secrets of the area. Our assistants, who love Aomori, will lead you on an enjoyable journey, ensuring a fantastic time.
         <br/>Booking is easy! Simply click the link below to choose your preferred date.
         <br/>We look forward to your participation!
         </p>
